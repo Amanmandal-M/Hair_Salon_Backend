@@ -17,7 +17,7 @@ const AppointmentGetData = async (req,res) =>{
 const AppointmentPostData = async (req,res)=>{
     const payload=req.body;
     try {
-        sendEmail({email:payload.user_email,subject:`Haircut with ${payload.styler_name} on ${payload.date} at ${payload.time}`,body:`Dear ${payload.user_name},<br>
+        sendEmail({email:payload.user_email,subject:`${payload.service_name} with ${payload.styler_name} on ${payload.date} at ${payload.time}`,body:`Dear ${payload.user_name},<br>
 
         Thank you for booking an appointment with our salon. This email is to confirm that your appointment with our experienced hairdresser, ${payload.styler_name}, has been successfully scheduled for a haircut on ${payload.date} at ${payload.time}.<br>
         
