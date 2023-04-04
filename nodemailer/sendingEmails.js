@@ -10,7 +10,7 @@ const sendEmail = async (data) => {
     auth: {
       user: 'snipsandspikes@gmail.com',
       pass: process.env.GOOGLEKEY
-    }
+  }
   });
 
   transporter.sendMail({
@@ -19,8 +19,8 @@ const sendEmail = async (data) => {
     subject: data.subject,
     html: data.body,
   })
-    .then(() => console.log('mail sent successfully'))
-    .catch((err) => console.log("err", err))
+  .then(()=>console.log('mail sent successfully'))
+  .catch((err)=>console.log("err",err))
 
 }
 
