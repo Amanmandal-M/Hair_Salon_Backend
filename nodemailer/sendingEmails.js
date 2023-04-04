@@ -8,14 +8,14 @@ const sendEmail = async (data) => {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-      user: 'snipsandspikes@gmail.com',
+      user: 'snipsandspikeshairsalon@gmail.com',
       pass: process.env.GOOGLEKEY
   }
   });
 
   transporter.sendMail({
     to: `${data.email}`,
-    from: 'snipsandspikes@gmail.com',
+    from: 'snipsandspikeshairsalon@gmail.com',
     subject: data.subject,
     html: data.body,
   })
