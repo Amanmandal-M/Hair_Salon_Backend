@@ -9,7 +9,7 @@ const sendEmail = async (data) => {
     port: 587,
     auth: {
      user: "snipsandspikeshairsalon@gmail.com",
-                pass: "bjnmgosyarqbocka"
+                pass: "ngjuyxbgcnicfjla"
   }
   });
 
